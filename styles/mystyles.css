@@ -63,14 +63,16 @@ p{
 .btn-details{
     background-color: rgb(255, 136, 0);
     color: white;
-    width: 80%;
+    width: 100%;
     /* in order to play with width and padding you need to use display block */
     display: block;
-    padding: 1rem; /* padding is inside the box */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* padding: 1rem; padding is inside the box */
     border-radius: .5rem;/* border-radius makes the corners of the box curved */
     text-align: center;
-    margin-right: auto;
-    margin-left: auto;
+    /* margin-right: auto;
+    margin-left: auto; */
     margin-top: 1rem;
 }
 
@@ -118,16 +120,14 @@ nav a{
 /* houses and penthouses  */
 .house-item{
     background-color: rgb(242, 242, 242);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    margin-right: 1rem;
 }
 .house-item-img{
 
 }
 .house-item-img img{
-    width: 10rem;
-    height: 10rem;
+    max-width: 100%;
+
 
 }
 .house-item-text{
