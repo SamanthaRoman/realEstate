@@ -8,7 +8,7 @@ font-size: 62.5%;/* 62.5% = 10 px = 1 rem*/
     margin: 0;
 }
 a{
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 1.6rem;
 }
@@ -55,11 +55,8 @@ p{
     justify-content: space-between;
 }
 .flex-row img{
-  
     margin-right: 2rem;
 }
-
-
 .btn-details{
     background-color: rgb(255, 136, 0);
     color: white;
@@ -75,6 +72,7 @@ p{
     margin-left: auto; */
     margin-top: 1rem;
 }
+
 
 /*header*/
 .site-init{
@@ -116,19 +114,14 @@ nav a{
 .about-item p{
     text-align: justify;
 }
-    /* justify spreads out the words evenly through the container its in  */
+/* justify spreads out the words evenly through the container its in  */
 /* houses and penthouses  */
 .house-item{
     background-color: rgb(242, 242, 242);
     margin-right: 1rem;
 }
-.house-item-img{
-
-}
 .house-item-img img{
     max-width: 100%;
-
-
 }
 .house-item-text{
     margin-left: 1rem;
@@ -137,4 +130,36 @@ nav a{
 }
 .house-item-text p.price{
     color: green;
+}
+
+
+/* contact */
+.site-header{
+    background-color: black;
+}
+.form-container{
+    margin: 1rem;
+}
+legend{
+    display: block;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    /* letter-spacing: .1rem; */
+    font-weight: 700;
+    padding: .5rem;
+}
+.form-label{
+    display: block;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: 700;
+}
+.form-control{
+    width: 98%;
+    background-color: rgb(237, 237, 237);
+    border: none;
+    font-size: 1.6rem;
+    padding: 0.4rem;
+    border-radius: .5rem;
 }
