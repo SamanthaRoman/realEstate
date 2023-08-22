@@ -7,33 +7,121 @@
     <title>Real Estate</title>
 </head>
 <body>
-    <header>
-        <h1>Real Estate</h1>
-        <nav>
-            <a href="about.html">About</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <p>We sell luxury houses, condominiums, and penthouses</p>
+    <header class="site-init">
+        <div class="container flex-vertical">
+            <div class="bar">
+                <h1>Real Estate</h1>
+                <nav>
+                    <a href="about.html">About</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+            <p>We sell luxury houses, condominiums, and penthouses</p>
+        </div>
     </header>
     <main>
-        <section>
+        <section class="container">
             <h2>More about us</h2>
-            <div>
-                <img src="./img/icon1.svg" alt="lock icon">
-                <h3>Security</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ad neque accusantium id officia vero qui velit quasi sequi dignissimos eaque alias aut quaerat, atque modi laboriosam assumenda quisquam tempore.</p>
+            <div class="flex-row"> <!-- we need to put a flex row and wrpa all the items we want to move -->
+                    <div class="about-item"> <!-- add a class so we can change these items also -->
+                        <img src="./img/icon1.svg" alt="lock icon">
+                        <h3>Security</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ad neque accusantium id officia vero qui velit quasi sequi dignissimos eaque alias aut quaerat, atque modi laboriosam assumenda quisquam tempore.</p>
+                    </div>
+                    <div class="about-item">
+                        <img src="./img/icon2.svg" alt="money icon">
+                        <h3>The Best Prices</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ad neque accusantium id officia vero qui velit quasi sequi dignissimos eaque alias aut quaerat, atque modi laboriosam assumenda quisquam tempore.</p>
+                    </div>
+                    <div class="about-item">
+                        <img src="./img/icon3.svg" alt="clock icon">
+                        <h3>On Time</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ad neque accusantium id officia vero qui velit quasi sequi dignissimos eaque alias aut quaerat, atque modi laboriosam assumenda quisquam tempore.</p>
+                </div>
             </div>
-            <div>
-                <img src="./img/icon2.svg" alt="money icon">
-                <h3>The Best Prices</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ad neque accusantium id officia vero qui velit quasi sequi dignissimos eaque alias aut quaerat, atque modi laboriosam assumenda quisquam tempore.</p>
+        </section>
+
+
+        <section class="container">
+            <h2>Houses and Penthouses</h2>
+            <div class="flex-row">
+                <div class="house-item">
+                    <div class="house-item-img">
+                        <img src="./img/announcement1.jpg" alt="house on the lake">
+                    </div> 
+                    <div class="house-item-text">
+                        <h3>Luxury House on the Lake</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sapiente optio sed aut fuga non obcaecati corrupti delectus, distinctio ipsam debitis illum qui sit magni sunt quae ducimus quod reprehenderit.</p>
+                        <p class="price">3,000,000.00</p>
+                        <ul class="flex-row">
+                            <li class="flex-row">
+                                <img src="./img/icon_wc.svg" alt="bathrooms">
+                                <p>3</p>
+                            </li>
+                            <li class="flex-row">
+                                <img src="./img/icon_room.svg" alt="rooms">
+                                <p>4</p>
+                            </li>
+                            <li class="flex-row">
+                                <img src="./img/icon_parking.svg" alt="parking">
+                                <p>3</p>
+                            </li>
+                        </ul>
+                        <a class="btn-details">See Details</a>
+                    </div>
+                <div class="house-item">
+                    <div class="house-item-img">
+                        <img src="./img/announcement1.jpg" alt="house on the lake">
+                    </div> 
+                    <div class="house-item-text">
+                        <h3>Luxury House on the Lake</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sapiente optio sed aut fuga non obcaecati corrupti delectus, distinctio ipsam debitis illum qui sit magni sunt quae ducimus quod reprehenderit.</p>
+                        <p class="price">3,000,000.00</p>
+                        <ul class="flex-row">
+                            <li class="flex-row">
+                                <img src="./img/icon_wc.svg" alt="bathrooms">
+                                <p>3</p>
+                            </li>
+                            <li class="flex-row">
+                                <img src="./img/icon_room.svg" alt="rooms">
+                                <p>4</p>
+                            </li>
+                            <li class="flex-row">
+                                <img src="./img/icon_parking.svg" alt="parking">
+                                <p>3</p>
+                            </li>
+                        </ul>
+                        <a class="btn-details">See Details</a>
+                    </div>
+                <div class="house-item">
+                    <div class="house-item-img">
+                        <img src="./img/announcement1.jpg" alt="house on the lake">
+                    </div> 
+                    <div class="house-item-text">
+                        <h3>Luxury House on the Lake</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sapiente optio sed aut fuga non obcaecati corrupti delectus, distinctio ipsam debitis illum qui sit magni sunt quae ducimus quod reprehenderit.</p>
+                        <p class="price">3,000,000.00</p>
+                        <ul class="flex-row">
+                            <li class="flex-row">
+                                <img src="./img/icon_wc.svg" alt="bathrooms">
+                                <p>3</p>
+                            </li>
+                            <li class="flex-row">
+                                <img src="./img/icon_room.svg" alt="rooms">
+                                <p>4</p>
+                            </li>
+                            <li class="flex-row">
+                                <img src="./img/icon_parking.svg" alt="parking">
+                                <p>3</p>
+                            </li>
+                        </ul>
+                        <a class="btn-details">See Details</a>
+                    </div>
+                </div>
+
             </div>
-            <div>
-                <img src="./img/icon3.svg" alt="clock icon">
-                <h3>On Time</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ad neque accusantium id officia vero qui velit quasi sequi dignissimos eaque alias aut quaerat, atque modi laboriosam assumenda quisquam tempore.</p>
-            </div>
+
         </section>
     </main>
     <footer>

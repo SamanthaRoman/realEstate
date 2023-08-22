@@ -1,4 +1,8 @@
 /*global*/
+/* html resets the sizing of the html */
+html{
+font-size: 62.5%;/* 62.5% = 10 px = 1 rem*/
+}
 *{
     padding: 0;
     margin: 0;
@@ -6,19 +10,131 @@
 a{
     color: black;
     text-decoration: none;
+    font-size: 1.6rem;
 }
 body{
     font-family: arial;
 }
 h1,h2,h3{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
+}
+h1{
+    font-size: 3.5rem;
+}
+h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+h3{
+    font-size: 2rem;
 }
 p{
     line-height: 2;
+    font-size: 1.6rem;
 }
 
-/*utilities*/
 
+/*utilities*/
+.container{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* justify content wont work unless you change the height between them. so we do that next */
+    height: 80%;
+}
+.flex-row{
+    display: flex; /* Moves it side by side  */
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flex-row img{
+  
+    margin-right: 2rem;
+}
+
+
+.btn-details{
+    background-color: rgb(255, 136, 0);
+    color: white;
+    width: 80%;
+    /* in order to play with width and padding you need to use display block */
+    display: block;
+    padding: 1rem; /* padding is inside the box */
+    border-radius: .5rem;/* border-radius makes the corners of the box curved */
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1rem;
+}
 
 /*header*/
+.site-init{
+    background-image: url(../img/header.jpg);
+    height: 40vh;
+    background-position: top right;
+    background-size: cover;
+}
+.bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 10vh;
+}
+
+nav a{
+    color: white;
+    margin-right: 1rem;
+    /* 1rem =16 px? */
+}
+
+/* about us */
+.about-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+.about-item img{
+    width: 10rem;
+    height: 10rem;
+}
+.about-item h3{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.about-item p{
+    text-align: justify;
+}
+    /* justify spreads out the words evenly through the container its in  */
+/* houses and penthouses  */
+.house-item{
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.house-item-img{
+
+}
+.house-item-img img{
+    width: 10rem;
+    height: 10rem;
+
+}
+.house-item-text{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+.house-item-text p.price{
+    color: green;
+}
