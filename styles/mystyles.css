@@ -55,7 +55,7 @@ p{
     justify-content: space-between;
 }
 .flex-row img{
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
 }
 .btn-details{
     background-color: rgb(255, 136, 0);
@@ -155,6 +155,15 @@ legend{
     letter-spacing: .1rem;
     font-weight: 700;
 }
+.form-radio{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: 700;
+    
+}
 .form-control{
     width: 98%;
     background-color: rgb(237, 237, 237);
@@ -162,4 +171,19 @@ legend{
     font-size: 1.6rem;
     padding: 0.4rem;
     border-radius: .5rem;
+}
+.btn-contact{
+    background-color: rgb(255, 136, 0);
+    color: white;
+    width: 20%;
+    /* in order to play with width and padding you need to use display block */
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* padding: 1rem; padding is inside the box */
+    border-radius: .5rem;/* border-radius makes the corners of the box curved */
+    text-align: center;
+    /* margin-right: auto;
+    margin-left: auto; */
+    margin-top: 1rem;
 }
