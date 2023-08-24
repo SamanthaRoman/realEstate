@@ -81,6 +81,9 @@ p{
     background-position: top right;
     background-size: cover;
 }
+.site-init p{
+
+}
 .bar{
     display: flex;
     justify-content: space-between;
@@ -94,6 +97,38 @@ nav a{
     margin-right: 1rem;
     /* 1rem =16 px? */
 }
+header p{
+    color: white;
+}
+
+
+
+/* footer */
+.site-footer{
+    background-color: black;
+    height: 10vh;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.footer-words h1{
+    color: white;
+    text-align: center;
+    /* 1rem =16 px? */
+}
+header p{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
 
 /* about us */
 .about-item{
@@ -114,6 +149,16 @@ nav a{
 .about-item p{
     text-align: justify;
 }
+.about-us-img{
+    padding-bottom: 2rem;
+}
+.about-details{
+    text-indent: 5rem;
+    margin-top: 2rem;
+}
+
+
+
 /* justify spreads out the words evenly through the container its in  */
 /* houses and penthouses  */
 .house-item{
@@ -187,3 +232,167 @@ legend{
     margin-left: auto; */
     margin-top: 1rem;
 }
+
+/* Blog */
+
+.blog-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    background-color: rgb(221, 221, 221);
+}
+.blog-item img{
+    width: 100%;
+    margin-bottom: 3rem;
+
+}
+.blog-item h3{
+    text-align: center;
+}
+.blog-item p{
+    text-align: justify;
+    margin: 2rem;
+
+}
+/* Media Queries for screen smaller than 768px  */
+@media (max-width:767px) /* max width is 0 px to 767 px.*/{
+    html{
+        font-size: 45%;  /* this changes all the font sizes */
+        
+    }
+    .container{  /* we make the container size smaller */
+        width: 90%;  /* use the entire screen avaiblable  */
+        padding: 0 1rem;  /* padding to the content  */
+    }
+    .house-item{
+        margin-right: 2rem;
+    }
+    .house-item-img img{
+        max-width: 100%;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+    h3{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+    nav a{
+        display: block;
+        margin: 0.5rem 2rem;  /* staking links vertical space */
+        font-size: 2rem;
+        
+    }
+    .site-init{
+        height: 20vh;  /* increases hieght of view */
+    }
+    .about-item img{
+        width: 8rem;  /* ajust image size for mobile views */
+    }
+}
+
+
+/* Media Queries for medium size screens from 768 px to 1023 px (tablet size)  */
+@media (min-width: 768px) and (max-width: 1023px){
+    html{
+        font-size: 45%;  /* this changes all the font sizes */
+        
+    }
+    .container{  /* we make the container size smaller */
+        width: 80%;  /* use the entire screen avaiblable  */
+        padding: 1 1rem;  /* padding to the content  */
+    }
+    .house-item{
+        margin-right: 2rem;
+    }
+    .house-item-img img{
+        max-width: 100%;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2.8rem;
+        margin-bottom: 2rem;
+    }
+    h3{
+        font-size: 2.2rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+    nav a{
+        margin: 0.5rem 1rem;  /* staking links vertical space */
+        font-size: 2rem;
+        
+    }
+    .site-init{
+        height: 30vh;  /* increases hieght of view */
+    }
+    .about-item img{
+        width: 8rem;  /* ajust image size for mobile views */
+    }
+}
+
+
+/* Media Queries for screens larger than 1024 px (desktop size)  */
+@media (min-width: 1024px){
+    .container{  
+        width: 60%;
+    }
+}
+
+
+/* Mobile devices (small screen) */
+@media only screen and (max-width: 480px){
+    html{
+        font-size: 25%;  /* this changes all the font sizes */
+        
+    }
+    .container{  /* we make the container size smaller */
+        width: 100%;  /* use the entire screen avaiblable  */
+        padding: 0 1rem;  /* padding to the content  */
+    }
+    .house-item{
+        margin-right: 2rem;
+    }
+    .house-item-img img{
+        max-width: 40%;
+    }
+
+    h1{
+        font-size: 5.5rem;
+    }
+    h2{
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    p{
+        display: none;
+    }
+    nav a{
+        display: block;
+        margin: 0.5rem 2rem;  /* staking links vertical space */
+        font-size: 2rem;
+        
+    }
+    .site-init{
+        height: 20vh;  /* increases hieght of view */
+    }
+    .about-item img{
+        width: 8rem;  /* ajust image size for mobile views */
+    }
+}
+
